@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/sindresorhus/github-markdown-css/gh-pages/github-markdown.css">
+        <style>
+            @media print {
+                body {
+                    zoom: 75%;
+                }
+                code, pre, tr {
+                    background: none ! important;
+                }
+                table {
+                    page-break-inside: avoid
+                }
+                td {
+                    vertical-align: top;
+                }
+                .markdown-body pre {
+                    margin: 0;
+                }
+            }
+        </style>
+    </head>
+    <body class="markdown-body">
+        <%
+            http = Net::HTTP.new 'api.github.com', 443
+            http.use_ssl = true
+            response = http.post 'https://api.github.com/markdown/raw', STDIN.read, {'Content-Type'=>'text/x-markdown'}
+            raise Exception.new "Unsuccessful response #{response.code}" unless response.code == '200'
+        %>
+        <%= response.body %>
+    </body>
+</html>

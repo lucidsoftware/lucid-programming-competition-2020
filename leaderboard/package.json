@@ -1,0 +1,13 @@
+{
+    "name": "leaderboard",
+    "version": "0.0.0",
+    "dependencies": {
+        "@types/escape-html": "0.0.20",
+        "@types/node": "8.0.47",
+        "@types/tough-cookie": "^2.3.5",
+        "escape-html": "1.0.3",
+        "request": "^2.83.0",
+        "request-promise-native": "^1.0.7",
+        "typescript": "2.6.1"
+    }
+}

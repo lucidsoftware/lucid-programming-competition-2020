@@ -1,0 +1,15 @@
+*.class
+*.dep
+*.html
+*.pdf
+*.zip
+*.swp
+
+.npm
+.npm-install
+.tsc
+.tsc-compile
+tests.zip
+node_modules/
+leaderboard/*.js
+.DS_Store
