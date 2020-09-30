@@ -1,7 +1,7 @@
 # Rover Repair
 
 Dr. Sheila Simmons is an engineer at NASA working on the electrical systems for a new rover that will explore the Jezero crater on Mars.
-She has noticed a glitch in the autonomous driving system, and has traced it to some radiation-hardened processing nodes that have been wired incorrectly.
+She has noticed a glitch in the autonomous driving system, and has traced the problem to some radiation-hardened processing nodes that have been wired incorrectly.
 
 Each processing node comes equipped with two input connectors on the left and right.
 These allow the processing node to be connected to two or more sub-processing nodes.
