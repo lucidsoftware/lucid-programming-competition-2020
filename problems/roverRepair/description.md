@@ -10,8 +10,10 @@ These connectors allow all the nodes to be connected together in a tree structur
 
 Every processing node is labeled with a unique part number.
 In order to work correctly, the processing tree must follow a strict, but simple set of rules.
-Any sub processor connected via the left port must have a part number that is strictly less than the processing node it connects to.
-Similarly, any sub processor connected via the right port must have a part number that is strictly greater than the processing node it connects to.
+For every processing node (let's call it Node X), the following must be true:
+
+* All sub processors connected (directly or indirectly) via Node X's *left* port must have a part number that is strictly *less than* Node X's part number.
+* All sub processors connected (directly or indirectly) via Node X's *right* port must have a part number that is strictly *greater than* Node X's part number.
 
 For example, the following is a _valid_ processing tree:
 ```
@@ -22,13 +24,13 @@ For example, the following is a _valid_ processing tree:
 3   6   20
 ```
 
-Dr. Simmons believes that two processing nodes in the rover she is fixing have been swapped by accident.
-Write a program that identifies which nodes have been swapped so she can make the processing tree valid again.
+After running some diagnostics, Dr. Simmons  that two processing nodes in the rover she is fixing have been swapped by accident.
+Write a program that identifies which nodes have been swapped so she can fix the rover.
 
 # Input / Output
-Your input consists of the current structure of the rover's processing tree.
+Your input consists of the current node structure of the rover's processing tree.
 The first row of input consists of the total number of nodes you will read in, _including any empty nodes_.
-Each row of the input represents the label of a single node, or if there is no processor in that location, it will be labeled "empty".
+Each row of the input represents the label of a single node, or if there is no processor in that location, it will be labeled as empty.
 The order of the nodes is in _level order_, that is, the the nodes are listed from top to bottom, left to right order.
 
 For example, consider the following _invalid_ processing tree:
