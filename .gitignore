@@ -13,3 +13,4 @@ tests.zip
 node_modules/
 leaderboard/*.js
 .DS_Store
+.vscode
