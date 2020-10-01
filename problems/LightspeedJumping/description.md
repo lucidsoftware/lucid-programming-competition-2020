@@ -8,9 +8,9 @@ For example, if your max jump distance is 5, then on each jump, your ship is equ
 ## Input
 `N  X`
 
-`N` => The number of parsecs your starship starts from home
+`N` => The number of parsecs your starship starts from home. This will always be an integer.
 
-`X` => The max number of parsecs your starship teleportation engine is able to jump
+`X` => The max number of parsecs your starship teleportation engine is able to jump. This will always be an integer.
 
 ## Output
 The average number of jumps it will take your ship to get home, rounded to the nearest two decimal places.
