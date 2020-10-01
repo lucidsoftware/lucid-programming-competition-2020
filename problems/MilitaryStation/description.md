@@ -26,7 +26,7 @@ Your output will be a single integer `N` that tells the number of rooms needed t
 
 ## Constraints
 0 < `P` < 100
-All given percentages will be possible to achieve
+All given percentages will be possible to achieve. P will always be an integer.
 
 ## Example
 
