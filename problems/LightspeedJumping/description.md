@@ -5,8 +5,11 @@ To calculate how far your starship jumps, you are given a max jump distance of X
 For example, if your max jump distance is 5, then on each jump, your ship is equally likely to jump 1, 2, 3, 4, or 5 parsecs forward.
 
 Input
+
 `N X`
+
 `N` => The number of parsecs your starship starts from home
+
 `X` => The max number of parsecs your starship teleportation engine is able to jump
 
 Output
