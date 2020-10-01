@@ -24,7 +24,7 @@ For example, the following is a _valid_ processing tree:
 3   6   20
 ```
 
-After running some diagnostics, Dr. Simmons  that two processing nodes in the rover she is fixing have been swapped by accident.
+After running some diagnostics, Dr. Simmons has determined that two processing nodes in the rover she is fixing have been swapped by accident.
 Write a program that identifies which nodes have been swapped so she can fix the rover.
 
 # Input / Output
@@ -104,7 +104,7 @@ empty
 ## Output 1:
 
 ```
-Blah
+Swap nodes 10 and 14
 ```
 
 ## Input 2:
@@ -130,6 +130,7 @@ empty
 
 ## Output 2:
 ```
+Swap nodes 17 and 19
 ```
 
 
