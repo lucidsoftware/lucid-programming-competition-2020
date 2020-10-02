@@ -23,10 +23,10 @@ Buzz Aldrin -> Neil Armstrong
 ```
 
 ### Output
-A list of names, one on each line, beginning with the given recruit and ending with Neil Armstrong
+A list of names, one on each line, beginning with the Neil Armstrong, and ending with the recruit
 ```
-Bismuth Rotaxian
-Garfunkel Torol Booth
-Peggy Whitson
 Neil Armstrong
+Peggy Whitson
+Garfunkel Torol Booth
+Bismuth Rotaxian
 ```
