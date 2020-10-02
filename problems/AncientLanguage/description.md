@@ -39,12 +39,12 @@ When a program executes, it starts at line 0 of the instructions, reads the inst
 ## Input
 ```
 SET &1 65
-SET &2 4
+SET &2 5
 SET &3 2 
 OUT &1 0
 ADD &2 -1
-JMP &&3 6
-JMP 0 1
+JMP &&3 7
+JMP 0 3
 EXT
 ```
 ## Output
