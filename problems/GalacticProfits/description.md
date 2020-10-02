@@ -45,8 +45,40 @@ Min: <minimum>
 * The price of an individual stock will be an integer value between `1` and `5000` (inclusive).
 
 
+## Examples
 
+### Input 0
+```
+4
+3
+Dusty_Logistics
+32 20 82 78
+Red_Rovers
+64 21 70 47
+Methane_Holdings_Co
+70 77 18 75
+```
 
+### Output 0
+```
+Max: 37465
+Min: -3087
+```
 
+### Input 1
+```
+6
+3
+Dusty_Logistics
+200 700 300 200 600 600
+Red_Rovers
+100 800 400 600 700 300
+Methane_Holdings_Co
+25 20 65 86 30 67
+```
 
-
+### Output 1
+```
+Max: 42698
+Min: -9438
+```
