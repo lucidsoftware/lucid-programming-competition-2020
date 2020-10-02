@@ -41,7 +41,21 @@ Costs will be integers between 1 and 1000.
 Each planet name will be a single word with no spaces.
 
 ## Examples
-Input
+Input 1
+```
+3 3
+Dantooine
+Kamino
+Geonosis
+Dantooine Kamino 3
+Dantooine Geonosis 2
+Kamino Geonosis 1
+```
+Output 1
+```
+3
+```
+Input 2
 ```
 4 6
 Bespin
@@ -55,7 +69,7 @@ Hoth Naboo 4
 Hoth Mustafar 6
 Naboo Mustafar 9
 ```
-Output
+Output 2
 ```
 12
 ```
