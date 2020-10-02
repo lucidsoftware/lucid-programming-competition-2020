@@ -1,0 +1,13 @@
+SET &1 0
+SET &2 1
+SET &3 2
+SET &4 3
+SET &5 4
+SET &6 5
+SET &7 6
+SET &8 7
+SET &9 8
+JMP &&&&&&&&&9 11 
+JMP 0 0
+OUT 0 1
+EXT

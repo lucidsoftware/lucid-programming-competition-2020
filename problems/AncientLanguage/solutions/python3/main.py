@@ -24,7 +24,15 @@ def SET(op1, op2):
     DATA[addr(op1)] = addr_or_value(op2)
 
 def ADD(op1, op2):
-    DATA[addr(op1)] += addr_or_value(op2)
+    address = addr(op1)
+    op = addr_or_value(op2)
+    total = DATA[address] + op
+    if total > 127:
+        DATA[address] = 127-(total & 0xff)
+    elif total < -128:
+        DATA[address] = total & 0xff
+    else:
+        DATA[address] = total
 
 def JMP(op1, op2):
     global DATA
