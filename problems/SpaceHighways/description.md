@@ -41,4 +41,21 @@ Costs will be integers between 1 and 1000.
 Each planet name will be a single word with no spaces.
 
 ## Examples
-None yet
+Input
+```
+4 6
+Bespin
+Hoth
+Naboo
+Musafar
+Bespin Hoth 5
+Bespin Naboo 8
+Bespin Mustafar 3
+Hoth Naboo 4
+Hoth Mustafar 6
+Naboo Mustafar 9
+```
+Output
+```
+12
+```
