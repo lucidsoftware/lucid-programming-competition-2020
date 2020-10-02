@@ -34,7 +34,7 @@ Your output will be a single integer that tells the total minimum cost of a grou
 
 `N`-1 < `E` < 10000
 
-There will be no duplicate edges (edges that connect the same two systems together). 
+There will be no duplicates in the given potential highway locations. That is, for any two planets, there will be at most one cost given to connect them directly. 
 
 Costs will be integers between 1 and 1000.
 
