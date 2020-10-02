@@ -3,21 +3,21 @@
 ## Adding a Problem
 Create a new folder for your problem, as in `problems/yourProblemName`
 
-Inside of the `yourProblemName` folder, you should create two new folders called `solutions` and `tests`. 
+Inside of the `yourProblemName` folder, you should create two new folders called `solutions` and `tests`.
 
 ### Solutions Folder
 
-The `solutions` folder should contain the source code for any solutions to the problem. 
+The `solutions` folder should contain the source code for any solutions to the problem.
 
 Typically we create a folder for each language (so you might have a `solutions/python3/` folder or a `solutions/typescript/` folder).
 
-Also inside the `solutions` folder are one or more `.run` files. This is simply a bash script that executes one of the solutions. For example, if you had a Python 3 solution inside of `solutions/python3/main.py`, you could add a file named `solutions/0.run` with the following contents:
+Also inside the `solutions` folder are one or more `.run` files. This is simply a bash script that executes one of the solutions. For example, if you had a Python 3 solution inside of `solutions/python3/main.py`, you could add a file named `solutions/python3.run` with the following contents:
 
 ```
 #!/bin/bash
 python3 $(dirname $0)/python3/main.py
 ```
-> Note: You must mark the `.run` file as executable (as in `chmod +x 0.run`) or else you will get a permission denied problem when trying to run the tests.
+> Note: You must mark the `.run` file as executable (as in `chmod +x python3.run`) or else you will get a permission denied problem when trying to run the tests.
 
 ### Tests Folder
 
