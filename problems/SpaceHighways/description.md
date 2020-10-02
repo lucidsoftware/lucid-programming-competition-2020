@@ -30,9 +30,9 @@ The list of systems is then followed by `E` lines. Each line gives a potential p
 Your output will be a single integer that tells the total minimum cost of a group of highways that can connect all the planetary systems
 
 ## Constraints
-0 < `N` < 100
+0 < `N` <= 1000
 
-`N`-1 < `E` < 1000
+`N`-1 < `E` < 10000
 
 There will be no duplicate edges (edges that connect the same two systems together). 
 
