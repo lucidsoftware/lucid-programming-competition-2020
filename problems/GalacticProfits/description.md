@@ -3,20 +3,24 @@
 After you obliterated most of your savings on a failed Lunar cryptocurrency experiment, you decided to look into investing on the Martian Stock Exchange.
 Using historical price data from the exchange, you want to compute the maximum gain and maximum loss you would have achieved over the past several years while using the following strategy:
 
-Each month you invest up to and no more than 5,000 galactic credits into stocks available on the Martian Stock Exchange.
+Each month you may invest up to 5,000 galactic credits into purchasing stocks available on the Martian Stock Exchange.
+You may purchase as many shares of as many companies as you like as long as the total purchase price for the month is less than or equal to 5,000 credits.
 Once you have purchased a stock, you may not sell it; you must hold all purchased stocks for the rest of the simulation.
 On the last month for which you have historical price data, you will compute your portfolio's total value by taking the final price for each stock and multiplying it by the number of shares of that stock you own.
 
-To compute your overall profit (or loss) on your investments, take your total portfolio value and subtract off the number of credits that you used to make purchases.
+As a measure of how successful your investing was, you'll want to calculate your return. To compute your return, take your total portfolio value and subtract off the number of credits that you used to make purchases.
+```
+Return = PortfolioValue - PurchaseCost
+```
 
-Following the strategy described above, write a program to find the largest and smallest possible overall profit.
+Following the strategy described above, write a program that finds the largest and smallest possible returns, given a table of historical stock data.
 
 ## Input
 As input, you will receive the following:
 
 * The number of months of historical data.
 * The number of stocks included in that historical data.
-* For each stock, the historic price of that stock on a given month.
+* For each stock, the historic price of that stock on a given month (stock prices only change once a month on the Martian Stock Exchange)
 
 The input will be formatted as follows:
 ```
@@ -43,6 +47,7 @@ Min: <minimum>
 * Where `s` is the number of stocks, `1 <= s <= 65535`
 * Names of stocks will be no longer than 256 ASCII characters and will not contain any whitespace characters.
 * The price of an individual stock will be an integer value between `1` and `5000` (inclusive).
+* _Use it or lose it_: If you invest less than 5000 credits in a given month, you cannot carry over the remaining balance to another month.
 
 
 ## Examples
