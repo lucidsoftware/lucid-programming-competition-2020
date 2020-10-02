@@ -1,4 +1,3 @@
-
 nIssues = int(input())
 issues = dict()
 issuesInOrder = []
@@ -10,6 +9,6 @@ nPolls = int(input())
 for i in range(nPolls):
     for j in range(nIssues):
         issue, vote = input().split(' ')
-        issues[issue] += 1 if vote == 'yes' else (-2 if vote == 'no' else 0)
+        issues[issue] += (1 if vote == 'yes' else (-2 if vote == 'no' else 0))
 for issue in issuesInOrder:
-    print('{} {}'.format(issue, "yes" if issues[issue] > 0 else ("no" if issues[issue] < 0 else "abstain")))
+    print('{} {}'.format(issue, ("yes" if issues[issue] > 0 else ("no" if issues[issue] < 0 else "abstain"))))

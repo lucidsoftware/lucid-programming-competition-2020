@@ -1,0 +1,68 @@
+6
+A222
+B112
+C421
+D879
+E900
+F450
+10
+A222 yes
+B112 yes
+C421 yes
+D879 yes
+E900 yes
+F450 yes
+A222 yes
+B112 yes
+C421 yes
+D879 no
+E900 yes
+F450 yes
+A222 yes
+B112 yes
+C421 yes
+D879 no
+E900 yes
+F450 yes
+A222 yes
+B112 yes
+C421 yes
+D879 no
+E900 yes
+F450 yes
+A222 yes
+B112 yes
+C421 yes
+D879 no
+E900 yes
+F450 no
+A222 yes
+B112 yes
+C421 yes
+D879 unsure
+E900 yes
+F450 no
+A222 yes
+B112 yes
+C421 no
+D879 unsure
+E900 no
+F450 no
+A222 yes
+B112 yes
+C421 no
+D879 unsure
+E900 no
+F450 no
+A222 yes
+B112 yes
+C421 no
+D879 unsure
+E900 no
+F450 no
+A222 no
+B112 no
+C421 unsure
+D879 unsure
+E900 unsure
+F450 no
