@@ -13,10 +13,10 @@ The second line will be a number _E_, followed by _E_ lines of pairs of names.
 Bismuth Rotaxian
 8
 Bismuth Rotaxian -> Garfunkel Torol Booth
-Rhaj Dasgupta -> Garfunkel Booth
+Rhaj Dasgupta -> Garfunkel Torol Booth
 Garfunkel Torol Booth -> Bob Behnken
 Peggy Whitson -> Neil Armstrong
-Garfunkel Booth -> Peggy Whitson
+Garfunkel Torol Booth -> Peggy Whitson
 Buzz Aldrin -> Kevin Bacon
 Bob Behnken -> Buzz Aldrin
 Buzz Aldrin -> Neil Armstrong
