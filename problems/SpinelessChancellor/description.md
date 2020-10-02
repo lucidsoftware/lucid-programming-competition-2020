@@ -5,7 +5,7 @@ The Supreme Chancellor of the Galactic Senate is a spineless politician with no 
 Given a list of poll responses for a set of issues, output how the Chancellor should vote on each issue with a "yes", "no", or an "abstain" if its really impossible to determine one way or the other. (The Chancellor just needs more time to _really_ think through the issue before committing to a decision. One musn't rush these things you know!)
 
 ### Input
-Input will begin with a number "I" indicating the number of issues on the poll sheets, followed by each issue id on its own line. The next number, "P", will indicate how many poll sheets there are to process, with each having a "yes", "no", or "unsure" response next to it indicating the voters support on each issue.
+Input will begin with a number _I_ indicating the number of issues on the poll sheets, followed by each issue id on its own line. The next number _P_ will indicate how many poll sheets there are to process, with each having a "yes", "no", or "unsure" response next to each issue indicating the voters support on that issue.
 ```
 4
 P105
