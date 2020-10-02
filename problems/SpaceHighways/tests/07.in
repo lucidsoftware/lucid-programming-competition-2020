@@ -1,0 +1,751 @@
+150 600
+aa
+ab
+ac
+ad
+ae
+af
+ag
+ah
+ai
+aj
+ak
+al
+am
+an
+ao
+ap
+aq
+ar
+as
+at
+au
+av
+aw
+ax
+ay
+az
+ba
+bb
+bc
+bd
+be
+bf
+bg
+bh
+bi
+bj
+bk
+bl
+bm
+bn
+bo
+bp
+bq
+br
+bs
+bt
+bu
+bv
+bw
+bx
+by
+bz
+ca
+cb
+cc
+cd
+ce
+cf
+cg
+ch
+ci
+cj
+ck
+cl
+cm
+cn
+co
+cp
+cq
+cr
+cs
+ct
+cu
+cv
+cw
+cx
+cy
+cz
+da
+db
+dc
+dd
+de
+df
+dg
+dh
+di
+dj
+dk
+dl
+dm
+dn
+do
+dp
+dq
+dr
+ds
+dt
+du
+dv
+dw
+dx
+dy
+dz
+ea
+eb
+ec
+ed
+ee
+ef
+eg
+eh
+ei
+ej
+ek
+el
+em
+en
+eo
+ep
+eq
+er
+es
+et
+eu
+ev
+ew
+ex
+ey
+ez
+fa
+fb
+fc
+fd
+fe
+ff
+fg
+fh
+fi
+fj
+fk
+fl
+fm
+fn
+fo
+fp
+fq
+fr
+fs
+ft
+aa ab 383
+ab ac 886
+ac ad 777
+ad ae 915
+ae af 793
+af ag 335
+ag ah 386
+ah ai 492
+ai aj 649
+aj ak 421
+ak al 362
+al am 27
+am an 690
+an ao 59
+ao ap 763
+ap aq 926
+aq ar 540
+ar as 426
+as at 172
+at au 736
+au av 211
+av aw 368
+aw ax 567
+ax ay 429
+ay az 782
+az ba 530
+ba bb 862
+bb bc 123
+bc bd 67
+bd be 135
+be bf 929
+bf bg 802
+bg bh 22
+bh bi 58
+bi bj 69
+bj bk 167
+bk bl 393
+bl bm 456
+bm bn 11
+bn bo 42
+bo bp 229
+bp bq 373
+bq br 421
+br bs 919
+bs bt 784
+bt bu 537
+bu bv 198
+bv bw 324
+bw bx 315
+bx by 370
+by bz 413
+bz ca 526
+ca cb 91
+cb cc 980
+cc cd 956
+cd ce 873
+ce cf 862
+cf cg 170
+cg ch 996
+ch ci 281
+ci cj 305
+cj ck 925
+ck cl 84
+cl cm 327
+cm cn 336
+cn co 505
+co cp 846
+cp cq 729
+cq cr 313
+cr cs 857
+cs ct 124
+ct cu 895
+cu cv 582
+cv cw 545
+cw cx 814
+cx cy 367
+cy cz 434
+cz da 364
+da db 43
+db dc 750
+dc dd 87
+dd de 808
+de df 276
+df dg 178
+dg dh 788
+dh di 584
+di dj 403
+dj dk 651
+dk dl 754
+dl dm 399
+dm dn 932
+dn do 60
+do dp 676
+dp dq 368
+dq dr 739
+dr ds 12
+ds dt 226
+dt du 586
+du dv 94
+dv dw 539
+dw dx 795
+dx dy 570
+dy dz 434
+dz ea 378
+ea eb 467
+eb ec 601
+ec ed 97
+ed ee 902
+ee ef 317
+ef eg 492
+eg eh 652
+eh ei 756
+ei ej 301
+ej ek 280
+ek el 286
+el em 441
+em en 865
+en eo 689
+eo ep 444
+ep eq 619
+eq er 440
+er es 729
+es et 31
+et eu 117
+eu ev 97
+ev ew 771
+ew ex 481
+ex ey 675
+ey ez 709
+ez fa 927
+fa fb 567
+fb fc 856
+fc fd 497
+fd fe 353
+fe ff 586
+ff fg 965
+fg fh 306
+fh fi 683
+fi fj 219
+fj fk 624
+fk fl 528
+fl fm 871
+fm fn 732
+fn fo 829
+fo fp 503
+fp fq 19
+fq fr 270
+fr fs 368
+fs ft 708
+cn bo 150
+ds ax 619
+bz er 556
+bd dk 765
+ey dn 351
+br dw 35
+cm ay 915
+fh ce 744
+fl cz 366
+aj fg 433
+dx fh 229
+ev ed 475
+er ai 396
+bd bl 236
+br cq 429
+dp eh 929
+ez ba 405
+br an 614
+bm ce 841
+ae eo 129
+fi cr 918
+ar ds 325
+dp eq 184
+fk ft 773
+ev dq 591
+af dl 955
+fg cr 83
+bq ao 198
+cf eb 805
+du al 623
+da ft 344
+bu cq 341
+aw al 811
+eb ab 662
+be bc 306
+eq di 445
+ew cu 466
+ai aq 283
+ai cw 638
+am cw 601
+bk ac 900
+ez dw 469
+ct et 132
+dd fa 934
+bs ak 164
+bx fb 900
+bu aj 774
+an as 191
+fp ba 467
+fe dm 91
+fe ew 543
+bk ah 446
+ag db 419
+fh ck 349
+aw aj 10
+di eg 343
+fh ag 302
+an cu 322
+cd ep 600
+av ea 940
+cj fk 668
+af da 128
+by dg 659
+eq eu 423
+ep fq 82
+be fe 293
+cu es 851
+az ff 223
+bx bo 43
+du ej 299
+fk ay 591
+ch dd 820
+fg fc 156
+bs ae 380
+ep et 777
+aa cd 861
+fm bd 885
+br cd 622
+cp ea 614
+cj ea 327
+aj dq 203
+ca ce 785
+er bq 869
+da fj 873
+bw bk 809
+dz du 304
+du dm 755
+cp ds 369
+ez by 47
+fi bv 250
+bo dz 34
+cl bv 254
+fm bk 126
+ac bu 976
+bm cf 730
+fg ci 415
+av ci 305
+by du 557
+ac bs 698
+bx br 40
+ac da 404
+by fb 648
+fi ef 152
+bj fe 340
+do ap 128
+cc bd 50
+ek bj 430
+fn dh 178
+dw dk 972
+ft bn 368
+dk bq 796
+ez bo 683
+cr ba 233
+al bq 361
+en et 762
+dd aj 191
+cx fq 368
+cz dg 691
+cy eu 58
+ao cq 206
+ai ck 387
+dw ds 727
+fo aq 553
+ds bo 648
+cs bz 81
+fb br 858
+ex ck 887
+ek cd 513
+fk am 480
+eg at 190
+cw af 642
+au bh 988
+aq cs 285
+ce en 607
+ak bx 238
+eb ef 218
+as dr 784
+cv ai 874
+fh bn 484
+ah da 758
+cm av 730
+aa ef 619
+dk ev 389
+ay df 158
+bf dp 359
+cs bx 418
+fj ep 364
+aw dq 174
+dt dd 463
+fc fk 293
+dn ed 116
+ct ed 575
+bp dt 952
+dd er 538
+fk cc 31
+du ev 82
+ca dd 140
+fq ae 339
+fa as 22
+eq am 813
+ez bb 686
+di cc 177
+bh ed 760
+cf dq 500
+eh cz 951
+di ak 819
+af cl 50
+bs eh 806
+fe dn 376
+af ek 590
+eo dp 919
+eb de 823
+de ar 31
+dp cw 127
+br bk 254
+fn ay 815
+cl bd 378
+am ev 89
+cr eg 733
+fo ar 347
+bj bl 692
+dz fn 574
+ey cx 292
+eg as 218
+bk ej 56
+bo ai 131
+cc ct 662
+bh ff 790
+et cc 852
+af dw 869
+cb ff 7
+bt dl 950
+au cp 227
+an bb 597
+dd el 561
+di af 771
+as eh 343
+bg bu 380
+fe aw 428
+dg bo 284
+es fs 831
+ej bv 951
+be cv 715
+ef cu 48
+cw fc 436
+fc ae 955
+dp du 487
+fk bc 160
+ck am 684
+bp fs 724
+cw aw 123
+cc ff 822
+ed ap 748
+er ba 270
+eo dx 704
+dz df 908
+aj da 807
+dt eq 85
+ee dg 699
+fl ew 899
+cn dy 172
+bn ch 507
+ci aq 225
+ef bn 1
+bc ch 54
+fb cm 339
+dl ew 68
+bv cv 788
+fb bg 123
+bf cx 851
+db fk 255
+aa dd 814
+cf bs 182
+bf ad 721
+df bg 182
+dj cn 297
+cx ae 723
+fm bz 298
+de dg 182
+ec el 58
+ai bt 1000
+am dt 484
+cy ae 978
+ef dj 933
+bg av 267
+an ak 683
+eh dh 87
+bj fa 991
+bh ek 477
+bq cx 529
+fj ev 491
+di ci 619
+fn fh 929
+fc av 311
+cd dk 226
+cn cs 438
+cb ee 723
+bh dw 658
+fr bb 127
+ep er 652
+dv eg 529
+bn du 889
+ak fn 578
+dm ew 200
+ca bf 88
+bb ft 658
+aq ca 18
+bp dh 369
+du fe 196
+ew af 267
+bc ea 529
+ai fn 279
+fr cd 673
+ay fp 1
+ev bv 284
+ei ex 383
+ct fn 335
+fj bi 422
+ch bj 958
+ea al 763
+aw dn 717
+dy dw 663
+bg ft 218
+cc ax 16
+ag bz 365
+fk an 492
+es fh 538
+av dc 988
+ce bo 342
+eq dy 666
+cj ep 518
+al df 352
+ck by 507
+fi en 365
+bn de 155
+ea cx 680
+dn ck 539
+ep fg 171
+ce dq 761
+ft cm 466
+ek ew 887
+df bn 970
+dh dy 622
+br dm 290
+ch bf 674
+ao ff 549
+bt cz 314
+df du 950
+br eo 157
+ak bh 824
+fg av 359
+cz bo 246
+dd al 991
+cv dw 101
+cm fm 625
+ef cr 290
+dq cr 239
+ab ew 384
+ep bh 344
+cc ec 982
+cx co 12
+ar ei 193
+bd dy 869
+bf ac 175
+ed eo 217
+df cz 488
+aw cv 958
+ei cx 934
+fr ds 419
+fl cb 727
+cw be 394
+dh bw 306
+dc ez 560
+fs ak 563
+eu at 281
+bp dy 11
+fa ba 584
+fj bo 709
+cv bm 558
+fn dd 711
+au af 691
+ej dn 639
+cs av 668
+ez ct 181
+dp bt 900
+eu fi 155
+bk ep 233
+ep ak 374
+be df 664
+bl ez 95
+dx dl 465
+bq fa 87
+el ft 916
+bk dd 12
+fe bh 388
+es dj 774
+fn cr 743
+ae fo 125
+fj aj 64
+eo cb 713
+at af 405
+bh dv 735
+at cn 436
+bl ad 670
+by fh 803
+bl am 90
+ci af 961
+ah bd 404
+aq bq 822
+es cd 444
+bd eh 529
+ey fr 701
+dr bg 788
+dv bz 590
+di dz 427
+du fo 37
+do cp 665
+er au 481
+co fo 355
+ax fh 934
+fe en 313
+fb en 710
+cn ce 609
+at bt 996
+es ct 296
+at ch 802
+ba ac 572
+bo az 744
+es dn 90
+bb aq 879
+am aa 197
+cw bh 214
+bk dv 371
+bs eo 116
+bp fm 640
+fh cl 199
+fk dl 203
+ej bf 129
+ed ae 572
+fq df 139
+cx dr 541
+er cu 227
+fe ee 726
+ec ac 646
+cu ds 340
+ad cj 826
+do aq 340
+eu dq 597
+be cp 295
+ej cf 520
+eg dw 293
+bg ba 280
+fk dz 636
+bt fs 108
+fl dj 571
+fe dx 84
+aa do 610
+fq bo 940
+cl ff 305
+ax ce 165
+et ab 350
+bz dc 340
+ae el 987
+ac ev 80
+fl bv 408
+fe bf 562
+cr bf 54
+ey bb 495
+ep fn 582
+cv cq 188
+bn dp 439
+bm fo 321
+dc fs 487
+cq ca 464
+bw dr 11
+cd db 143
+co fs 426
+cu bc 854
+co fr 749
+dt es 517
+di am 160
+cz by 554
+fr bg 4
+dh dx 108
+ae al 907
+dg ad 326
+fe da 798
+an df 116
+ak dd 15
+bj fr 101
+bv cg 330
