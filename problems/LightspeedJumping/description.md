@@ -29,4 +29,4 @@ The average number of jumps it will take your ship to get home, rounded to the n
 
 | Input 2	|	Output 2 |
 | --- | --- |
-| 10  7	|	3.78 |
+| 10  5	|	3.78 |
