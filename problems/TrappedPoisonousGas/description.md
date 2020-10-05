@@ -5,7 +5,7 @@
 
 On the planet Pandora, there is a cave which has rock formations on the ceilings. A poisonous gas has flown through the cave and the rock formations have trapped some amount of the gas because of the space that exists between them. You are given a list of the length of the rock formations in the cave and you have to calculate the amount of gas that is trapped inside the cave. Assume width of each rock formation is one.
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/lucidsoftware/lucid-programming-competition-2020/blob/master/problems/TrappedPoisonousGas/trappedpoisongas.jpg)
 
 ## Input
 
