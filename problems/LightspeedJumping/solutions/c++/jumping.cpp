@@ -32,4 +32,5 @@ int main() {
  double average = averageJumps[parsecs];
  double roundedAverage = round(average * 100) / 100.0;
  cout << roundedAverage;
+ return 0;
 }
