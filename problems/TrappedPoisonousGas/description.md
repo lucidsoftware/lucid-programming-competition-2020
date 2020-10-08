@@ -62,5 +62,5 @@ On the planet Pandora, there is a cave which has rock formations on the ceilings
 ```
 
 ## Constraints
-* Where `n` is the number of different types of parts, `0 <= n <= 500000`
+* Where `n` is the number of rock formations on the ceiling of the cave, `0 <= n <= 500000`
 * Where `l` is the length of any given rock formation, `0 <= l <= 10000`

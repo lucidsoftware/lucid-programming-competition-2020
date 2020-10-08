@@ -7,9 +7,9 @@ int main()
 {
     int numberBlocks;
     cin >> numberBlocks;
-    float length;
-    vector<float> lengths;
-    float max = 0;
+    int length;
+    vector<int> lengths;
+    int max = 0;
     int maxIndex = 0;
     for(int i = 0; i < numberBlocks; i++) {
         cin >> length;
@@ -19,10 +19,10 @@ int main()
         }
         lengths.push_back(length);
     }
-    float maxFromLeft = 0;
-    float volume = 0;
+    int maxFromLeft = 0;
+    int volume = 0;
     for(int i = 0; i < maxIndex; i++) {
-        float current = lengths.at(i);
+        int current = lengths.at(i);
         if(current >= maxFromLeft) {
             maxFromLeft = current;
         } 
@@ -30,9 +30,9 @@ int main()
             volume += (maxFromLeft - current);
         }
     }
-    float maxFromRight = 0;
+    int maxFromRight = 0;
     for(int i = numberBlocks - 1; i > maxIndex; i--) {
-        float current = lengths.at(i);
+        int current = lengths.at(i);
         if(current >= maxFromRight) {
             maxFromRight = current;
         } 
