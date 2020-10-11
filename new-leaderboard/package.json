@@ -8,9 +8,10 @@
   },
   "dependencies": {
     "@types/cookie": "^0.4.0",
+    "aws-serverless-express": "^3.3.8",
     "axios": "^0.20.0",
     "cookie": "^0.4.1",
-    "serverless-express": "^2.0.11",
+    "express": "^4.17.1",
     "source-map-support": "^0.5.10"
   },
   "devDependencies": {
