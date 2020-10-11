@@ -29,9 +29,10 @@ Write a program that identifies which nodes have been swapped so she can fix the
 
 # Input / Output
 Your input consists of the current node structure of the rover's processing tree.
-The first row of input consists of the total number of nodes you will read in, _including any empty nodes_.
+The first row of input consists of the total number of nodes you will read in, _including all empty nodes_.
 Each row of the input represents the label of a single node, or if there is no processor in that location, it will be labeled as empty.
 The order of the nodes is in _level order_, that is, the the nodes are listed from top to bottom, left to right order.
+All nodes, including empty nodes, will be included in the input.
 
 For example, consider the following _invalid_ processing tree:
 ```

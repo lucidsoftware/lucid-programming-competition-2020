@@ -5,37 +5,49 @@ using System.Linq;
 using StockName = System.String;
 using Price = System.Int32;
 
+/*
+ This solution was a lot cooler when the problem was more complicated.
+ In order to not make it a horrible exercise in optimizing a linear combination
+ we changed it to just require a greedy solution, and all these classes
+ are overkill.
+*/
 
-class CapitalGain {
+class CapitalGain
+{
 
     public StockName StockName { get; }
     public Price StartingPrice { get; }
     public Price EndingPrice { get; }
 
-
-    public CapitalGain(StockName stockName, Price start, Price end) {
+    public CapitalGain(StockName stockName, Price start, Price end)
+    {
         this.StockName = stockName;
         this.StartingPrice = start;
         this.EndingPrice = end;
     }
 
-    public double ExpectedReturnRatio() {
-        return (double)EndingPrice / (double)StartingPrice;
-    }
-
-    public bool WillGainMoney() {
+    public bool WillGainMoney()
+    {
         return this.EndingPrice - this.StartingPrice > 0;
     }
 
-    public bool WillLoseMoney() {
+    public bool WillLoseMoney()
+    {
         return this.EndingPrice - this.StartingPrice < 0;
+    }
+
+    public int ComputeGain(int maxSpend)
+    {
+        int numShares = maxSpend / this.StartingPrice;
+        return numShares * (this.EndingPrice - this.StartingPrice);
     }
 
 }
 
 class Month : Dictionary<StockName, Price>
 {
-    public List<CapitalGain> ComputePotentialCapitalGainsWith(Month endMonth) {
+    public List<CapitalGain> ComputePotentialCapitalGainsWith(Month endMonth)
+    {
         return this.Select(
             kvpair => new CapitalGain(kvpair.Key, kvpair.Value, endMonth[kvpair.Key])
         ).ToList();
@@ -76,7 +88,7 @@ class StockPriceTable : Dictionary<StockName, List<Price>>
 class Portfolio
 {
 
-    public int TotalMoneySpent {get; private set;} = 0;
+    public int TotalMoneySpent { get; private set; } = 0;
     private Dictionary<StockName, int> stocks = new Dictionary<StockName, int>();
 
     public int PurchaseStock(int price, StockName stockName, int quantity)
@@ -94,8 +106,10 @@ class Portfolio
         return cost;
     }
 
-    public int PortfolioValue(Month month) {
-        return stocks.Select(kv => {
+    public int PortfolioValue(Month month)
+    {
+        return stocks.Select(kv =>
+        {
             var stockPrice = month[kv.Key];
             var stockQuantity = kv.Value;
 
@@ -103,7 +117,8 @@ class Portfolio
         }).Sum();
     }
 
-    public int GetProfit(Month month) {
+    public int GetProfit(Month month)
+    {
         return PortfolioValue(month) - TotalMoneySpent;
     }
 
@@ -132,51 +147,29 @@ class Program
             stockPrices[stockName] = prices;
         }
 
-        var losingPortfolio = new Portfolio();
-        var winningPortfolio = new Portfolio();
+        var losingProfit = 0;
+        var winningProfit = 0;
 
         for (int month = 0; month < numMonths - 1; month++)
         {
             var currentMonth = stockPrices.GetMonth(month);
             var finalMonth = stockPrices.GetFinalMonth();
 
-            var orderedGains = currentMonth.ComputePotentialCapitalGainsWith(finalMonth).OrderBy(gain => gain.ExpectedReturnRatio()).ToList();
+            var potentialGains = currentMonth.ComputePotentialCapitalGainsWith(finalMonth);
+            var maxGain = potentialGains.Max(gain => gain.ComputeGain(MonthlyMoney));
+            var minGain = potentialGains.Min(gain => gain.ComputeGain(MonthlyMoney));
 
-            var remainingLosingMoney = MonthlyMoney;
-            var remainingWinningMoney = MonthlyMoney;
-
-            for (int i = 0; i < orderedGains.Count; i++) /* in order of worst gains first */ {
-                var gain = orderedGains[i];
-                if (gain.WillGainMoney()) {
-                    break;
-                }
-
-                var quantityToPurchase = remainingLosingMoney / gain.StartingPrice;
-
-                if (quantityToPurchase > 0) {
-                    int cost = losingPortfolio.PurchaseStock(gain.StartingPrice, gain.StockName, quantityToPurchase);
-                    remainingLosingMoney -= cost;
-                }
+            if (maxGain > 0) {
+                winningProfit += maxGain;
             }
 
-            for (int i = orderedGains.Count - 1; i >= 0; i--) /* in order of best gains first */ {
-                var gain = orderedGains[i];
-                if (gain.WillLoseMoney()) {
-                    break;
-                }
-
-                var quantityToPurchase = remainingWinningMoney / gain.StartingPrice;
-                if (quantityToPurchase > 0) {
-                    int cost = winningPortfolio.PurchaseStock(gain.StartingPrice, gain.StockName, quantityToPurchase);
-                    remainingWinningMoney -= cost;
-                }
-
+            if (minGain < 0) {
+                losingProfit += minGain;
             }
 
         }
 
-        Console.WriteLine("Max: " + winningPortfolio.GetProfit(stockPrices.GetFinalMonth()));
-        Console.WriteLine("Min: " + losingPortfolio.GetProfit(stockPrices.GetFinalMonth()));
-
+        Console.WriteLine($"Max: {winningProfit}");
+        Console.WriteLine($"Min: {losingProfit}");
     }
 }

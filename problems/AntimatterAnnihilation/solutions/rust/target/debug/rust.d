@@ -1,0 +1,1 @@
+/home/ken/Projects/lucid-programming-competition-2020/problems/AntimatterAnnihilation/solutions/rust/target/debug/rust: /home/ken/Projects/lucid-programming-competition-2020/problems/AntimatterAnnihilation/solutions/rust/src/main.rs

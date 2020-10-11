@@ -4,7 +4,9 @@ After you obliterated most of your savings on a failed Lunar cryptocurrency expe
 Using historical price data from the exchange, you want to compute the maximum gain and maximum loss you would have achieved over the past several years while using the following strategy:
 
 Each month you may invest up to 5,000 galactic credits into purchasing stocks available on the Martian Stock Exchange.
-You may purchase as many shares of as many companies as you like as long as the total purchase price for the month is less than or equal to 5,000 credits.
+You may purchase as many shares as you like as long as the total purchase price for the month is less than or equal to 5,000 credits.
+You may buy stock in different companies throughout the simulation, but in a given month, you must only purchase stock in a single company.
+
 Once you have purchased a stock, you may not sell it; you must hold all purchased stocks for the rest of the simulation.
 On the last month for which you have historical price data, you will compute your portfolio's total value by taking the final price for each stock and multiplying it by the number of shares of that stock you own.
 
@@ -48,6 +50,7 @@ Min: <minimum>
 * Names of stocks will be no longer than 256 ASCII characters and will not contain any whitespace characters.
 * The price of an individual stock will be an integer value between `1` and `5000` (inclusive).
 * _Use it or lose it_: If you invest less than 5000 credits in a given month, you cannot carry over the remaining balance to another month.
+* 
 
 
 ## Examples
