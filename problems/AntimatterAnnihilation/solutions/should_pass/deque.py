@@ -15,7 +15,7 @@ while rotation < len(d):
   if starts_with_match(d):
     for _ in match:
       d.popleft()
-    rot = min(rotation, len(match))
+    rot = min(rotation, len(match)-1)
     d.rotate(rot)
     rotation -= rot
   else:

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_INPUT_SIZE 1000000
+#define MAX_INPUT_SIZE 2000000
 #define LIST_SIZE (MAX_INPUT_SIZE+1)
 #define MATCH_STRING "antimatter"
 

@@ -73,3 +73,14 @@ write_test(
   'extra_matter',
 )
 
+write_test(
+  12,
+  'extra_' + 'antimatte'*180000 + 'r'*180000 + 'matter',
+  'extra_matter',
+)
+
+write_test(
+  13,
+  'extra_' + 'a'*180000 + 'ntimatter'*180000 + 'matter',
+  'extra_matter',
+)

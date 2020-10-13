@@ -13,7 +13,7 @@ Given a string representing the universe, remove all instances of the substring 
 The input consists of a single string of underscore characters and lowercase letters (`_` and `a-z`).
 
 ## Constraints
-The length of the input will be strictly less than 1,000,000 characters.
+The length of the input will be strictly less than 2,000,000 characters.
 
 ## Output Fomat
 Output a single string, what remains of the input after removing all of the antimatter.
