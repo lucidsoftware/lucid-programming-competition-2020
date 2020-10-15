@@ -7,10 +7,14 @@ import awsServerlessExpress from "aws-serverless-express";
 const app = express();
 const router = express.Router();
 
+const leaderboardCache = 
+
 router.use(awsServerlessExpressMiddleware.eventContext());
 
 router.get("/leaderboard", (req, res) => {
-  getHtml().then(html => res.send(html));
+  const schoolFilter = req.query.school;
+  
+  getHtml(schoolFilter).then(html => res.send(html)).catch(rejectedReason => res.send("Rejected with " + rejectedReason));
 })
 
 router.get("/leaderboard/health_check", (req, res) => {

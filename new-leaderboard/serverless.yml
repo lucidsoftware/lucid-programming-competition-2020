@@ -15,6 +15,7 @@ provider:
   name: 'aws'
   region: 'us-east-2' # Ohio
   runtime: 'nodejs12.x'
+  memorySize: 256
   apiGateway: 
     minimumCompressionSize: 1024
   httpApi:
@@ -22,8 +23,8 @@ provider:
   
   environment: 
     AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1'
-    HACKERRANK_AUTH: "puregarbage"
-    CONTEST_SLUG: "the-krrg-challenge"
+    CONTEST_SLUG: "lucid-internal-2020"
+    HACKERRANK_AUTH: "blah"
   
 
 

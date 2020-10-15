@@ -1,9 +1,6 @@
 import {
     Challenge,
-    getChallenges,
-    getProfile,
     getSanitizedSchoolFilter,
-    getSubmissions,
     groupByKey,
     isSubmissionValid,
     Profile,
@@ -14,13 +11,10 @@ import {
     Submission,
     timeToString,
     Username,
+    challengesCache,
+    submissionsCache,
 } from './common';
 
-const bioReminder = `Update the "About" section to have the following, separated by new lines:<br>
-- the school you are competing at (BYU, USU, UofU)<br>
-- the team number you were assigned<br>
-- your team name<br>
-<b>You must do this to be eligible for prizes</b>`;
 
 const leaderboardHtmlHeaderContent =
 `    <head>
@@ -135,19 +129,7 @@ function teamScoreToRow(challenges: Challenge[], score: TeamScore, profile: Prof
 
 function getNameCellContents(profile: Profile): string {
     const userUrl = `https://www.hackerrank.com/${profile.username}`;
-    const missingContent = profile.school.length == 0 || profile.teamNumber == 0 || profile.teamName.length == 0;
-    const tooltipContent = missingContent ? bioReminder : `Team number: ${profile.teamNumber}`;
-    const nameCellClasses = `tooltip${missingContent ? ' need-names' : ''}`;
-
-    const nameCellContents = [
-        `<a class="${nameCellClasses}" href="${userUrl}">`,
-        profile.teamName || profile.username, // fall back on username for malformed bios
-        missingContent ? '*' : '',
-        `<span class="tooltiptext">${tooltipContent}</span>`,
-        '</a>',
-    ].join('');
-
-    return nameCellContents;
+    return `<a href="${userUrl}">${profile.username}</a>`;
 }
 
 function getLocationCellContents(profile: Profile, schoolFilter?: string): string {
@@ -159,7 +141,7 @@ function getLocationCellContents(profile: Profile, schoolFilter?: string): strin
             return prettySchoolName;
         }
     } else {
-        return `<a class="tooltip" href="https://www.hackerrank.com/settings/bio">Set Location<span class='tooltiptext'>${bioReminder}</span>`;
+        return `<a class="tooltip" href="https://www.hackerrank.com/settings/bio">Unrecognized School<span class='tooltiptext'></span>`;
     }
 }
 
@@ -175,11 +157,12 @@ function getChallengeCellContents(score: TeamScore, slug: Slug): string {
 }
 
 export async function getHtml(schoolFilter?: string): Promise<string> {
-    const allSubmissions = await getSubmissions();
+    const allSubmissions = await submissionsCache.getValue();
+
     const submissionsByUsername = groupByKey(allSubmissions, 'username');
     const usernames = Object.keys(submissionsByUsername);
 
-    const allProfiles = await Promise.all(usernames.map(getProfile));
+    const allProfiles = usernames.map(username => ({username: username}));
     const usernameToProfile: Map<Username, Profile> = new Map(allProfiles.map(profile => [profile.username, profile] as [any, any]));
 
     const teamScores = Object.keys(submissionsByUsername).map(username => {
@@ -198,7 +181,7 @@ export async function getHtml(schoolFilter?: string): Promise<string> {
         return (b.totalScore - a.totalScore) || (a.totalTime - b.totalTime);
     });
 
-    const challenges = await getChallenges();
+    const challenges = await challengesCache.getValue();
 
     const teamScoreRows = teamScores.map((score, i) => {
         const profile = usernameToProfile.get(score.username);
@@ -234,6 +217,7 @@ export async function getHtml(schoolFilter?: string): Promise<string> {
     ].join('\n');
 
     const titleContent = '<a class="title" href="?">Lucid Programming Competition Leaderboard</a>';
+    const cachingMessage = `<p>Submissions data last updated ${submissionsCache.getLastUpdatedSecondsAgo()} seconds ago.</p>`;
     const placeholderMessage = `The <a href="${PUBLIC_CONTEST_URL}">Lucid Programing Competition</a> Leaderboard will be enabled after the first successful submission`;
     const mainContent = hasScoresToDisplay ? tableContents : placeholderMessage;
 
@@ -243,6 +227,7 @@ export async function getHtml(schoolFilter?: string): Promise<string> {
         '    <body>',
         '        <div class="container">',
         `        <h1>${titleContent}</h1>`,
+        cachingMessage,
         mainContent,
         '        </div>',
         '    </body>',
