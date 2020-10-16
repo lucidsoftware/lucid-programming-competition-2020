@@ -5,7 +5,7 @@ Using historical price data from the exchange, you want to compute the maximum g
 
 Each month you may invest up to 5,000 galactic credits into purchasing stocks available on the Martian Stock Exchange.
 You may purchase as many shares as you like as long as the total purchase price for the month is less than or equal to 5,000 credits.
-You may buy stock in different companies throughout the simulation, but in a given month, you must only purchase stock in a single company.
+You may buy stock in different companies throughout the simulation, but **in a given month, you must only purchase stock in a single company**.
 
 Once you have purchased a stock, you may not sell it; you must hold all purchased stocks for the rest of the simulation.
 On the last month for which you have historical price data, you will compute your portfolio's total value by taking the final price for each stock and multiplying it by the number of shares of that stock you own.
