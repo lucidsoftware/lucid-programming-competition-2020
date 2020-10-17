@@ -50,8 +50,6 @@ Min: <minimum>
 * Names of stocks will be no longer than 256 ASCII characters and will not contain any whitespace characters.
 * The price of an individual stock will be an integer value between `1` and `5000` (inclusive).
 * _Use it or lose it_: If you invest less than 5000 credits in a given month, you cannot carry over the remaining balance to another month.
-* 
-
 
 ## Examples
 
